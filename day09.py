@@ -23,7 +23,6 @@ if __name__ == '__main__':
 def is_leap(year):
     leap = False
     
-    # Write your logic here
     if year % 400 == 0:
         return True
     elif year % 100 == 0:
