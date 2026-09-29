@@ -1,0 +1,37 @@
+#LINK : https://www.hackerrank.com/challenges/py-if-else/problem?isFullScreen=true
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    if n % 2 != 0:
+        print("Weird")
+    elif 2 <= n <= 5:
+        print("Not Weird")
+    elif 6 <= n <= 20:
+        print("Weird")
+    else:
+        print("Not Weird")
+
+#LINK : https://www.hackerrank.com/challenges/write-a-function/problem
+def is_leap(year):
+    leap = False
+    
+    # Write your logic here
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    
+    return leap
+
+year = int(input())
+print(is_leap(year))
