@@ -1,19 +1,19 @@
-# #terminates the program, no alternate action
-# print('1')  
-# print('2')
+#terminates the program, no alternate action
+print('1')  
+print('2')
 # a = 4 / 0  
-# print('3')  
-# print('4')
+print('3')  
+print('4')
 
-# # performs alternate action and continues the program
-# print('1')    
-# print('2')   
-# try:
-#     a = 4 / 0
-# except ZeroDivisionError:
-#     print("message: Zero Division Error has occured")
-# print('3')    
-# print('4') 
+# performs alternate action and continues the program
+print('1')    
+print('2')   
+try:
+    a = 4 / 0
+except ZeroDivisionError:
+    print("message: Zero Division Error has occured")
+print('3')    
+print('4') 
 
 # try:
 #     print('Examples of syntax errors')
@@ -32,40 +32,40 @@
 
 
 # a = 10 / 0
-# try:
-#     print("Examples of runtime errors")
-#     x = 10 / 0 
-#     print(y)                   
-#     a = [1, 2, 3]; print(a[5])  
-#     d = {"a": 1}; print(d["b"])                    
-#     int("abc")                   
-#     "a" + 10                    
-#     import abcdef                
-# except IndexError:
-#     print(1)
-# except IndexError:
-#     print(2)
-# except KeyError as ke:
-#     print(3, ke)
-# except (ValueError, TypeError):
-#     print(4)
-# # except (ValueError as ve, TypeError as te):
-# #     pass 
-# except (ValueError, TypeError) as e:
-#     pass
-# except ZeroDivisionError:
-#     print(5)
-# #catch-all
-# except Exception as e:
-#     print(6)
-# except:
-#     print(7)
+try:
+    print("Examples of runtime errors")
+    x = 10 / 0 
+    #print(y)                   
+    a = [1, 2, 3]; print(a[5])  
+    d = {"a": 1}; print(d["b"])                    
+    int("abc")                   
+    "a" + 10                    
+    #import abcdef                
+except IndexError:
+    print(1)
+except IndexError:
+    print(2)
+except KeyError as ke:
+    print(3, ke)
+except (ValueError, TypeError):
+    print(4)
+# except (ValueError as ve, TypeError as te):
+#     pass 
+except (ValueError, TypeError) as e:
+    pass
+except ZeroDivisionError:
+    print(5)
+#catch-all
+except Exception as e:
+    print(6)
+except:
+    print(7)
 # except as e:
 #     pass
 
 
 
-# #not handling error
+#not handling error
 # try:
 #     a = 10 / 0 
 # except IndexError:
@@ -77,35 +77,35 @@
 
 
 
-# # else and finally
-# try:
-#     a = 10 / 4 
-# except IndexError:
-#     print(1)
-# except ZeroDivisionError:
-#     print(2)
-# else:
-#     print(3)
-# finally:
-#     print(4)
+# else and finally
+try:
+    a = 10 / 4 
+except IndexError:
+    print(1)
+except ZeroDivisionError:
+    print(2)
+else:
+    print(3)
+finally:
+    print(4)
 
 
 
-# try:
-#     a = 10 / 0
-# except IndexError:
-#     print(1)
-# except ZeroDivisionError:
-#     print(2)
-# else:
-#     print(3)
-# finally:
-#     print(4)
+try:
+    a = 10 / 0
+except IndexError:
+    print(1)
+except ZeroDivisionError:
+    print(2)
+else:
+    print(3)
+finally:
+    print(4)
     
 
 
 
-# #finally
+#finally
 # try:
 #     a = 10 / 0 
 # except IndexError:
@@ -173,4 +173,3 @@ except StudentNotFound as snf:
     print(snf)          
     print(snf.rollno)   #individual variables
     print(snf.name)     #individual variables 
-
